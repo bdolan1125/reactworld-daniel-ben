@@ -1,7 +1,10 @@
+import React from 'react';
+import './App.css';
 
 
 function Resume(){
   return (
+  <div>
     <header>
       <h1>
         Sally Student
@@ -11,10 +14,10 @@ function Resume(){
       <address>
         <a href="mailto:SallyStudent@example.com"> SallyStudent@example.com </a>
       </address>
-      <img width="100" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Picture of Sally Student AKA Ilana from Broad City"> </img>
+      <img width="100" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Picture of Sally Student AKA Ilana from Broad City"/>
     </header>
-    <main>
 
+   <main>
     <section>
       <h2>
         Summary
@@ -79,8 +82,6 @@ function Resume(){
         </ul>
       </nav>
     </section>
-
-
     <section>
       <h2>
         Conclusion
@@ -89,10 +90,9 @@ function Resume(){
         In conclusion, because I know how to flip patties, make milkshakes, and make people laugh, I will be perfect for this full stack software engineering position.
       </p>
     </section>
-  </main>
+   </main>
+  </div>
   ) 
 };
 
-ReactDOM.render(<Resume />, document.getElementById('root'));
-
-    
+export default Resume;
